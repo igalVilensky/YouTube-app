@@ -8,14 +8,16 @@ body,
 html {
   height: 100%;
 }
-section,
+section {
+  border: 2px dotted rgb(0, 140, 255);
+}
 div {
   border: 2px dotted red;
 }
 /* Top section */
 
 .top-menu {
-  height: 5vh;
+  height: 6vh;
   display: flex;
   justify-content: space-between;
 }
@@ -32,4 +34,37 @@ div {
 .logo img {
   width: 10vw;
   height: 5vh;
+}
+
+/* Search bar */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu on the top right side */
+
+.top-right-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu bar on the left side  */
+
+.left-side-bar-main-wrapper {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  width: 18vw;
+  height: 50vh;
+}
+
+.left-side-main-top-div {
+}
+
+.left-side-main-middle-div {
+}
+
+.left-side-main-bottom-div {
 }
