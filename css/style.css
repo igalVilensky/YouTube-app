@@ -43,7 +43,7 @@ div {
   align-items: center;
   justify-content: center;
   width: 35vw;
-  background-color: palegreen;
+  background-color: #202020;
 }
 
 /* .search-icon img {
@@ -76,19 +76,19 @@ div {
 .left-side-main-top-div {
   height: 17vh;
   width: 100%;
-  background-color: orange;
+  background-color: #202020;
 }
 
 .left-side-main-middle-div {
   height: 30vh;
   width: 100%;
-  background-color: rgb(0, 255, 13);
+  background-color: #202020;
 }
 
 .left-side-main-bottom-div {
   height: 53vh;
   width: 100%;
-  background-color: rgb(255, 0, 221);
+  background-color: #202020;
 }
 
 /* Left menu and main content (channel banner, navigation and videos) */
@@ -102,6 +102,19 @@ div {
 .main-content {
   width: 87vw;
 }
+
+.head-banner {
+  height: 31vh;
+  background-color: cyan;
+  /* margin-left: 3%; */
+}
+.head-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* Channel navigation */
+
 .channel-nav-wrapper {
   width: 87vw;
   background-color: #181818;
@@ -117,23 +130,11 @@ div {
   flex-direction: column;
   justify-content: center;
 }
+
 /* Channel banner */
-
-.head-banner {
-  height: 31vh;
-  background-color: cyan;
-  /* margin-left: 3%; */
-}
-.head-banner img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-/* Channel navigation */
-
 .channel-nav {
   height: 16vh;
-  background-color: rgb(0, 183, 255);
+  background-color: #181818;
   margin: 0 12%;
 }
 
@@ -141,6 +142,6 @@ div {
 
 .videos {
   height: 47vh;
-  background-color: rgb(185, 62, 113);
+  background-color: #0f0f0f;
   margin: 0 12%;
 }
