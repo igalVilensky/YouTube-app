@@ -9,10 +9,10 @@ html {
   height: 100%;
 }
 section {
-  border: 1px dotted rgb(0, 140, 255);
+  /* border: 1px dotted rgb(0, 140, 255); */
 }
 div {
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 /* Top section */
 
@@ -29,11 +29,13 @@ div {
   width: 10vw;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo img {
   width: 4vw;
-  height: 2.1vh;
+  height: 3vh;
+  /* margin-left: 5%; */
 }
 
 /* Search bar */
@@ -44,6 +46,15 @@ div {
   justify-content: center;
   width: 35vw;
   background-color: #202020;
+}
+input {
+  width: 35vw;
+  height: 3.5vh;
+}
+
+::-webkit-input-placeholder {
+  padding: 1.5%;
+  color: #7b7b7b;
 }
 
 /* .search-icon img {
