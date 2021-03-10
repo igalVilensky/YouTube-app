@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 body,
 html {
@@ -12,7 +13,7 @@ section {
   /* border: 1px dotted rgb(0, 140, 255); */
 }
 div {
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 h1 {
   font-size: 1.2rem;
@@ -21,16 +22,19 @@ h1 {
   padding-left: 10%;
 }
 h3 {
-  color: #eeeeee;
+  color: #eaeaea;
 }
 
 li {
   display: inline-block;
 }
 li a {
-  color: white;
+  color: #a5a5a5;
   text-decoration: none;
   list-style: none;
+}
+a:hover {
+  color: #ffffff;
 }
 img {
   max-width: 100%;
@@ -59,7 +63,14 @@ img {
   height: 3vh;
   /* margin-left: 5%; */
 }
-
+.fas,
+.fab,
+.far {
+  color: #909090;
+  padding-right: 1vw;
+  margin-left: 2vw;
+  max-width: 2vw;
+}
 /* Search bar */
 
 .search-bar {
@@ -107,6 +118,9 @@ input {
   width: 13vw;
   height: 94vh;
 }
+.left-side-bar-main-wrapper div {
+  display: flex;
+}
 
 .left-side-main-top-div {
   height: 17vh;
@@ -116,6 +130,11 @@ input {
   flex-direction: column;
   justify-content: space-evenly;
   border-bottom: 1px solid #383838;
+}
+
+.left-side-main-top-div img {
+  max-width: 15%;
+  max-height: 15%;
 }
 
 .left-side-main-middle-div {
@@ -170,6 +189,21 @@ input {
   /* margin: 0 12%; */
   border: 1px solid #7b7b7b;
 }
+
+.channel-icon-name-subscribe-wrapper {
+  /* align-self: flex-start; */
+  /* flex-grow: 5; */
+  /* flex: 2; */
+  /*  position: relative;
+  left: 50%;
+  bottom: 45%; */
+  height: 10vh;
+  width: 100vw;
+  /* margin-left: -55%; */
+  border: 1px dotted blue;
+  background-color: white;
+}
+
 .videos-wrapper {
   width: 87vw;
   background-color: #0f0f0f;
@@ -213,21 +247,22 @@ input {
   width: 10vw;
  
 } */
+.wrap-video-img {
+  height: 20vh;
+  width: 10vw;
+  background-color: #0f0f0f;
+  /* border: 1px dotted orange; */
+}
 .video-img {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 .video-img h2 {
-  color: rgb(0, 0, 0);
+  color: white;
+  padding-top: 1vh;
 }
 
 .video-img p {
-  color: rgb(0, 0, 0);
-}
-.wrap-video-img {
-  height: 18vh;
-  width: 10vw;
-  background-color: white;
-  border: 1px dotted orange;
+  color: #aaaaaa;
 }
