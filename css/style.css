@@ -13,7 +13,7 @@ section {
   /* border: 1px dotted rgb(0, 140, 255); */
 }
 div {
-  /* border: 1px dotted red; */
+  border: 1px dotted red;
 }
 h1 {
   font-size: 1.2rem;
@@ -40,6 +40,10 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
+#nav-hover ul li:hover {
+  border-bottom: 1px solid white;
+}
 /* Top section */
 
 .top-menu {
@@ -57,8 +61,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-
-.logo img {
+channel-nav-wrapper .logo img {
   width: 4vw;
   height: 3vh;
   /* margin-left: 5%; */
@@ -70,6 +73,7 @@ img {
   padding-right: 1vw;
   margin-left: 2vw;
   max-width: 2vw;
+  /* font-size: 0.75rem; */
 }
 /* Search bar */
 
@@ -171,7 +175,7 @@ input {
 
 .head-banner {
   height: 31vh;
-  background-color: cyan;
+  /* background-color: cyan; */
   /* margin-left: 3%; */
 }
 .head-banner img {
@@ -186,24 +190,53 @@ input {
   background-color: #181818;
   display: flex;
   justify-content: center;
-  /* margin: 0 12%; */
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #7b7b7b;
 }
-
-.channel-icon-name-subscribe-wrapper {
-  /* align-self: flex-start; */
-  /* flex-grow: 5; */
-  /* flex: 2; */
-  /*  position: relative;
-  left: 50%;
-  bottom: 45%; */
-  height: 10vh;
-  width: 100vw;
-  /* margin-left: -55%; */
-  border: 1px dotted blue;
-  background-color: white;
+.channel-nav-wrapper nav ul {
+  height: 5vh;
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
+.channel-icon-name-subscribe-wrapper {
+  height: 11vh;
+  width: 60vw;
+  border: 1px dotted rgb(0, 0, 71);
+  /* background-color: rgb(247, 0, 0); */
+  display: flex;
+}
+.channel-icon-name-subscribe-wrapper div {
+  /* background-color: rgb(235, 253, 156); */
+}
+#icon {
+  height: 10vh;
+  width: 4.7vw;
+}
+#icon img {
+  border-radius: 100%;
+  height: 10vh;
+  width: 4.7vw;
+}
+#name-details {
+  color: white;
+  height: 10vh;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#name-details h2 {
+  padding-top: 40%;
+  /* padding-left: 10%; */
+  font-size: 1.5rem;
+}
+#name-details p {
+  margin-bottom: 50%;
+}
 .videos-wrapper {
   width: 87vw;
   background-color: #0f0f0f;
@@ -213,15 +246,6 @@ input {
   border: 1px dotted yellow;
 }
 
-/* Channel banner */
-.channel-nav {
-  height: 16vh;
-  width: 70vw;
-  background-color: #181818;
-  margin: 0 12%;
-  display: flex;
-  align-items: flex-end;
-}
 .channel-nav nav ul {
   list-style: none;
   width: 65vw;
@@ -231,7 +255,10 @@ input {
   border: 1px solid white;
   padding-right: 25%;
 }
-
+/* i.fas.fa-search {
+  background-color: whitesmoke;
+  margin-left: 20%;
+} */
 /* Channel videos*/
 
 .videos {
@@ -242,11 +269,7 @@ input {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* .videos div {
-  height: 16vh;
-  width: 10vw;
- 
-} */
+
 .wrap-video-img {
   height: 20vh;
   width: 10vw;
