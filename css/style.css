@@ -12,7 +12,7 @@ section {
   /* border: 1px dotted rgb(0, 140, 255); */
 }
 div {
-  /* border: 1px dotted red; */
+  border: 1px dotted red;
 }
 h1 {
   font-size: 1.2rem;
@@ -22,6 +22,19 @@ h1 {
 }
 h3 {
   color: #eeeeee;
+}
+
+li {
+  display: inline-block;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 /* Top section */
 
@@ -59,11 +72,13 @@ h3 {
 input {
   width: 35vw;
   height: 3.5vh;
+  border: 0.5px solid #7b7b7b;
 }
 
 ::-webkit-input-placeholder {
   padding: 1.5%;
-  color: #7b7b7b;
+  color: #929292;
+  background-color: #0f0f0f;
 }
 
 /* .search-icon img {
@@ -151,9 +166,9 @@ input {
   width: 87vw;
   background-color: #181818;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   /* margin: 0 12%; */
+  border: 1px solid #7b7b7b;
 }
 .videos-wrapper {
   width: 87vw;
@@ -166,8 +181,20 @@ input {
 /* Channel banner */
 .channel-nav {
   height: 16vh;
+  width: 70vw;
   background-color: #181818;
   margin: 0 12%;
+  display: flex;
+  align-items: flex-end;
+}
+.channel-nav nav ul {
+  list-style: none;
+  width: 65vw;
+  height: 4vh;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid white;
+  padding-right: 25%;
 }
 
 /* Channel videos*/
@@ -176,4 +203,27 @@ input {
   height: 47vh;
   background-color: #0f0f0f;
   margin: 0 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.videos div {
+  height: 16vh;
+  width: 10vw;
+  /* object-fit: contain; */
+}
+.video-img {
+  display: flex;
+  align-items: center;
+}
+.wrap-video-img {
+  height: 22vh;
+  width: 10vw;
+  background-color: white;
+}
+/* .global-wrap-video {
+  height: 100vh;
+  width: 10vw;
+  background-color: yellow;
+  border: 2px solid yellow;
+} */
